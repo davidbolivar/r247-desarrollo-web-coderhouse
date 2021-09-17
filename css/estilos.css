@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,700&display=swap");
+/* VARIABLES  -------------------------------------------- */
+/* ESTILOS DE ETIQUETAS -------------------------------- */
+body {
+  font-family: Titillium Web, Helvetica !important;
+  font-size: 100%; }
+
+/* titulos */
+h2 {
+  background-color: #6c757d;
+  padding: 10px 25px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 700; }
+
+h3 {
+  font-size: 1.2rem; }
+
+/* main */
+main {
+  margin-top: 15px !important;
+  animation: fade-in 2s; }
+
+/* menu */
+.menu {
+  background-color: #f1f1f1ed !important;
+  min-height: 90px; }
+  .menu__logo {
+    height: 25px;
+    padding-left: 15px; }
+  .menu__img {
+    height: 20px; }
+
+.nav-link {
+  color: #293c7d !important;
+  font-weight: 600; }
+
+/* footer */
+.footer {
+  padding: 5px;
+  margin-top: 30px;
+  background-color: #212529; }
+  .footer__ul {
+    padding: 0px; }
+  .footer__li {
+    text-align: center;
+    color: white !important;
+    font-size: 0.8rem;
+    margin-top: 5px;
+    list-style-type: none; }
+  .footer__a {
+    color: white; }
+
+/* recargar */
+.recargar {
+  background-color: #293c7d;
+  padding: 15px 0px;
+  margin-top: 15px;
+  text-align: center;
+  color: white; }
+  .recargar__p {
+    margin: 0px; }
+  .recargar__select, .recargar__input {
+    margin: 5px; }
+
+/* como funciona */
+.como-funciona__img {
+  width: 100%; }
+
+.como-funciona__p {
+  min-height: 100px; }
+
+/* operadoras */
+.operadoras__div {
+  flex-basis: 150px;
+  margin: 20px 10px;
+  text-align: center; }
+
+.operadoras__img {
+  height: 30px; }
+
+/* galeria */
+.galeria__img:hover {
+  border: 10px solid white;
+  transition: transform 0.5s;
+  transform: scale(1.1) skew(0deg, 2deg);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+.galeria__img {
+  width: 100%;
+  border-radius: 15px; }
+
+/* preguntas frecuentes */
+.preguntas-frecuentes__ol {
+  padding-right: 20px; }
+
+.preguntas-frecuentes__p {
+  font-weight: bold; }
+
+.preguntas-frecuentes__iframe {
+  width: 100%;
+  height: 300px; }
+
+/* contacto */
+.contacto__label {
+  margin-top: 10px; }
+
+/* FLEX ------------------------------------ */
+.custom-flex {
+  display: flex; }
+
+.custom-row {
+  flex-direction: row; }
+
+.custom-wrap {
+  flex-wrap: wrap; }
+
+.space-evenly {
+  justify-content: space-evenly; }
+
+/* GRIDS ------------------------------------------------ */
+.grid-galeria {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px; }
+
+/* TRANSICIONES ----------------------------------------- */
+@keyframes fade-in {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+/* MEDIA QUERIES ---------------------------------------- */
+@media (max-width: 768px) {
+  body {
+    font-size: 0.8rem; }
+  /* menu */
+  .menu__li {
+    text-align: right;
+    padding: 8px 0px;
+    font-size: 1.2rem; }
+  .menu .dropdown-menu li {
+    text-align: right; }
+  /* como funciona */
+  .como-funciona__p {
+    min-height: 0px !important; }
+  /* galeria */
+  .grid-galeria {
+    grid-template-columns: 1fr; } }

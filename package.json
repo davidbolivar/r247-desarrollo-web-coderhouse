@@ -1,0 +1,17 @@
+{
+  "name": "recargas-247",
+  "version": "1.0.0",
+  "description": "Plataforma para recarga de saldo y pago de servicios.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilos.scss css/estilos.css && node-sass --include-path scss librerias/bootstrap/scss/bootstrap.scss librerias/bootstrap/css/bootstrap.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "David Bolívar <davidbolivar@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.12"
+  }
+}
