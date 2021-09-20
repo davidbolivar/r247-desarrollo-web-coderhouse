@@ -10,7 +10,7 @@ Digital platform to **pay or recharge your phone and television services** or **
 
 This project was created thinking of helping the end customer to overcome different problems such as recharge limits in banks and payment of high commissions for this service.
 
-`<link>` <https://davidbolivar.github.io/proyecto_coder_house/>
+`<link>` <https://davidbolivar.github.io/R247/>
 
 ---
 
@@ -24,4 +24,4 @@ Plataforma digital que permite **pagar o recargar tus servicios de teléfono y t
 
 Este proyecto fue creado pensando en ayudar al cliente final a superar diferentes problemáticas como límites de recarga en entidades bancarias y pago de altas comisiones por este servicio.
 
-`<link>` <https://davidbolivar.github.io/proyecto_coder_house/>
+`<link>` <https://davidbolivar.github.io/R247/>
