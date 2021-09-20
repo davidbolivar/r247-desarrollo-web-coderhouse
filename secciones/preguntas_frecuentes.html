@@ -6,6 +6,7 @@
 		<link rel="icon" type="image/png" href="../assets/img/favicon-32x32.png" sizes="32x32" />
 		<link rel="icon" type="image/png" href="../assets/img/favicon-16x16.png" sizes="16x16" />
 		<link rel="stylesheet" href="../librerias/bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 		<link rel="stylesheet" href="../css/estilos.css" />
 		<title>Preguntas frecuentes - Recargas 24/7</title>
 
@@ -19,131 +20,110 @@
 		<meta name="author" content="DB" />
 	</head>
 
-	<body class="container px-0">
+	<body>
 		<h1 hidden>Preguntas frecuentes - Recargas 24/7</h1>
 
-		<!-- HEADER -->
-		<header>
-			<!-- MENÚ SUPERIOR -->
-			<nav class="menu sticky-top navbar navbar-expand-lg navbar-light bg-light">
-				<div class="container-fluid">
-					<!-- Logo menú -->
-					<a class="navbar-brand" href="../index.html">
-						<img class="menu__logo" src="../assets/img/logo.svg" alt="Logo de Recargas 24/7" />
-					</a>
-					<!-- Botón menú -->
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse flex" id="navbarSupportedContent">
-						<!-- Secciones -->
-						<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-							<!-- Inicio -->
-							<li class="menu__li nav-item">
-								<a class="menu__a nav-link" href="../index.html"> Inicio</a>
-							</li>
-							<!-- Operadoras -->
-							<li class="menu__li nav-item dropdown">
-								<a class="menu__a nav-link dropdown-toggle" href="../#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Operadoras </a>
-								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<li>
-										<a class="menu__a dropdown-item" href="../secciones/operadoras.html"><img class="menu__img" src="../assets/img/movistar.svg" alt="Logo Movistar" /></a>
-									</li>
-									<li><hr class="dropdown-divider" /></li>
-									<li>
-										<a class="menu__a dropdown-item" href="../secciones/operadoras.html"><img class="menu__img" src="../assets/img/digitel.svg" alt="Logo Digitel" /></a>
-									</li>
-									<li><hr class="dropdown-divider" /></li>
-									<li>
-										<a class="menu__a dropdown-item" href="../secciones/operadoras.html"><img class="menu__img" src="../assets/img/movilnet.svg" alt="Logo Movilnet" /></a>
-									</li>
-									<li><hr class="dropdown-divider" /></li>
-									<li>
-										<a class="menu__a dropdown-item" href="../secciones/operadoras.html"><img class="menu__img" src="../assets/img/movistar_tv.svg" alt="Logo Movistar TV" /></a>
-									</li>
-									<li><hr class="dropdown-divider" /></li>
-									<li>
-										<a class="menu__a dropdown-item" href="../secciones/operadoras.html"><img class="menu__img" src="../assets/img/inter.svg" alt="Logo Inter" /></a>
-									</li>
-									<li><hr class="dropdown-divider" /></li>
-									<li>
-										<a class="menu__a dropdown-item" href="../secciones/operadoras.html"><img class="menu__img" src="../assets/img/simple_tv.svg" alt="Logo Simple TV" /></a>
-									</li>
-								</ul>
-							</li>
-							<!-- Nuestros números -->
-							<li class="menu__li nav-item">
-								<a class="menu__a nav-link" href="../secciones/nuestros_numeros.html">Nuestros números</a>
-							</li>
-							<!-- Galería -->
-							<li class="menu__li nav-item">
-								<a class="menu__a nav-link" href="../secciones/galeria.html">Galería</a>
-							</li>
-							<!-- Preguntas frecuentes -->
-							<li class="menu__li nav-item">
-								<a class="menu__a nav-link" href="../secciones/preguntas_frecuentes.html">Preguntas frecuentes</a>
-							</li>
-							<!-- Contacto -->
-							<li class="menu__li nav-item">
-								<a class="menu__a nav-link" href="../secciones/contacto.html">Contacto</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</nav>
-
-			<!-- CAROUSEL -->
-			<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-				<div class="carousel-indicators">
-					<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-					<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-				</div>
-				<div class="carousel-inner">
-					<div class="carousel-item active" data-bs-interval="10000">
-						<img src="../assets/img/bg-lg-1.jpg" class="d-block w-100" alt="Pareja disfrutando mientras ven televisión" />
-						<div class="carousel-caption d-none d-md-block">
-							<p class="bg-secondary text-white py-1 w-100 m-auto"><strong>EL MEJOR SERVICIO DE TODA VENEZUELA</strong></p>
-							<p class="bg-light py-1 w-75 m-auto"><strong>Recarga de saldo y pago de servicios las 24 horas...</strong></p>
-						</div>
-					</div>
-					<div class="carousel-item" data-bs-interval="2000">
-						<img src="../assets/img/bg-lg-2.jpg" class="d-block w-100" alt="Imagen de carousel con 3 chicas tomandose una selfie" />
-						<div class="carousel-caption d-none d-md-block">
-							<p class="bg-secondary py-1 w-100 m-auto"><strong>TE AYUDAMOS A MANTENERTE COMUNICADO</strong></p>
-							<p class="bg-light py-1 w-75 m-auto"><strong>Podrás pagar tus servicios de telefonía y televisión...</strong></p>
-						</div>
-					</div>
-				</div>
-				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Previous</span>
+		<!-- MENÚ SUPERIOR -->
+		<nav id="navbar" class="sticky-top navbar navbar-expand-lg navbar-light">
+			<div class="container-fluid">
+				<!-- Logo menú -->
+				<a class="navbar-brand" href="../index.html">
+					<img src="../assets/img/logo.svg" alt="Logo de Recargas 24/7" />
+				</a>
+				<!-- Botón menú -->
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
 				</button>
-				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Next</span>
-				</button>
+				<div class="collapse navbar-collapse flex" id="navbarSupportedContent">
+					<!-- Secciones -->
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						<!-- Inicio -->
+						<li class="nav-item">
+							<a class="nav-link" href="../index.html"> Inicio</a>
+						</li>
+						<!-- Operadoras -->
+						<li class="nav-item">
+							<a class="nav-link" href="operadoras.html"> Operadoras</a>
+						</li>
+						<!-- Nuestros números -->
+						<li class="nav-item">
+							<a class="nav-link" href="nuestros_numeros.html">Nuestros números</a>
+						</li>
+						<!-- Galería -->
+						<li class="nav-item">
+							<a class="nav-link" href="galeria. html">Galería</a>
+						</li>
+						<!-- Preguntas frecuentes -->
+						<li class="nav-item active">
+							<a class="nav-link" href="preguntas_frecuentes.html">Preguntas frecuentes</a>
+						</li>
+						<!-- Contacto -->
+						<li class="nav-item">
+							<a class="nav-link" href="contacto.html">Contacto</a>
+						</li>
+						<!-- Iconos redes y whatsapp -->
+						<li class="nav-item ms-3 pt-2">
+							<a href="https://www.instagram.com/recargas247" target="_blank">
+								<i class="fab fa-instagram"></i>
+							</a>
+						</li>
+						<li class="nav-item ms-3 pt-2">
+							<a href="https://www.twitter.com/recargas247" target="_blank">
+								<i class="fab fa-twitter"></i>
+							</a>
+						</li>
+						<li class="nav-item ms-3 pt-2">
+							<a href="https://wa.me/584120663036?text=¡Hola! Estoy viendo su página web y me gustaría obtener más información sobre su servicio." target="_blank">
+								<i class="fab fa-whatsapp"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
 			</div>
+		</nav>
+
+		<!-- HEADER -->
+		<header id="header" class="header-preguntas-frecuentes">
+			<div class="header__banner"></div>
 
 			<!-- FORMULARIO RECARGAR -->
-			<form class="recargar" action="recargar.php" method="post">
+			<form id="recargar" action="recargar.php" method="post">
 				<div class="row justify-content-center m-0">
-					<p class="recargar__p">Realiza tus recargas y pagos de manera fácil y rápida.</p>
-					<div class="col-lg-3 col-md-4 col-sm-10 col-10">
-						<select class="recargar__select form-control form-select" name="operator" required>
+					<p>Realiza tus pagos y recargas en 1 minuto.</p>
+					<div class="col-lg-3 col-md-6 col-sm-10 co-12">
+						<select id="operator" class="form-control form-select rounded-0" name="operator" required>
 							<option value="" selected hidden>Seleccione una operadora</option>
 							<option value="movistar">Movistar</option>
 							<option value="movilnet">Movilnet</option>
 							<option value="digitel">Digitel</option>
 							<option value="movistar_tv">MovistarTV</option>
-							<option value="inter">Inter</option>
+							<option value="interPrepago">Inter Prepago</option>
+							<option value="interPostpago">Inter PostPago</option>
 							<option value="simple_tv">SimpleTV</option>
 						</select>
 					</div>
-					<div class="col-lg-3 col-md-4 col-sm-10 col-10">
-						<input type="tel" class="recargar__input form-control" name="number" placeholder="Número de servicio a recargar" />
+
+					<div class="col-lg-3 col-md-6 col-sm-10 col-12">
+						<select id="amount" class="form-control form-select rounded-0" name="amount" required>
+							<option value="" selected hidden>Monto a recargar</option>
+							<option value="5.000.000">5.000.000 Bs</option>
+							<option value="10.000.000">10.000.000 Bs</option>
+							<option value="15.000.000">15.000.000 Bs</option>
+							<option value="20.000.000">20.000.000 Bs</option>
+							<option value="25.000.000">25.000.000 Bs</option>
+							<option value="30.000.000">30.000.000 Bs</option>
+							<option value="35.000.000">35.000.000 Bs</option>
+							<option value="40.000.000">40.000.000 Bs</option>
+							<option value="45.000.000">45.000.000 Bs</option>
+							<option value="50.000.000">50.000.000 Bs</option>
+						</select>
 					</div>
-					<div class="col-lg-3 col-md-3 col-sm-10 col-10">
-						<input class="recargar__input form-control btn btn-outline-light" type="submit" value="Recargar" />
+
+					<div class="col-lg-3 col-md-6 col-sm-10 col-12">
+						<input type="tel" class="form-control rounded-0" name="number" placeholder="Número de servicio a recargar" required />
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-10 col-12">
+						<input id="send-button" class="form-control btn btn-secondary rounded-0" type="submit" value="CONTINUAR" />
 					</div>
 				</div>
 			</form>
@@ -154,51 +134,79 @@
 			<!-- PREGUNTAS FRECUENTES -->
 			<section class="preguntas-frecuentes">
 				<h2>Preguntas frecuentes</h2>
-				<div class="container">
-					<ol class="preguntas-frecuentes__ol">
-						<li class="border-bottom border-1 mb-4">
-							<p class="preguntas-frecuentes__p">¿Hay un monto mínimo para recargar?</p>
-							<span>Estos montos pueden variar según exigencia de la operadora. Al realizar una recarga, podrás ver los montos disponibles.</span>
-						</li>
 
-						<li class="border-bottom border-1 mb-4">
-							<p class="preguntas-frecuentes__p">¿Cómo puedo saber el estado de mi recarga?</p>
-							<span> Dirígete a 'Panel de control' en el menú superior haz clic en 'Mis recargas'. </span>
-						</li>
+				<ul>
+					<li>
+						<h3>
+							<i class="fas fa-chevron-right"></i>
+							¿Hay un monto mínimo para recargar?
+						</h3>
+						<p>Los montos de recarga mínimo y máximo son establecidos por cada operadora y estos pueden cambiar con frecuencia. Al completar el formulario de recarga, podrás ver los montos habilitados.</p>
+					</li>
 
-						<li class="border-bottom border-1 mb-4">
-							<p class="preguntas-frecuentes__p">¿Tiene algún costo el servicio?</p>
-							<span> Al utilizar nuestra plataforma solo pagas el monto exacto de la recarga que solicites. </span>
-						</li>
+					<li>
+						<h3>
+							<i class="fas fa-chevron-right"></i>
+							¿Cómo puedo saber el estado de mi recarga?
+						</h3>
+						<p>Te notificaremos por Whatsapp cuando tu recarga haya sido procesada y te enviaremos un comprobante. Recuerda que para que podamos avanzar con tus solicitudes debes enviar el comprobante de pago.</p>
+					</li>
 
-						<li class="border-bottom border-1 mb-4">
-							<p class="preguntas-frecuentes__p">¿En cuánto tiempo se acredita mi recarga?</p>
-							<span> En promedio de 1 a 15 minutos, pero podría tardar hasta 60 minutos. El horario de acreditación es de 06:00 de la mañana a 12:00 de la noche. </span>
-						</li>
+					<li>
+						<h3>
+							<i class="fas fa-chevron-right"></i>
+							¿Tiene algún costo el servicio?
+						</h3>
+						<p>Si, además del valor de la recarga que solcites debes pagar una comisión por el servicio. El monto total a pagar te lo enviaremos cuando solicites tu recarga.</p>
+					</li>
 
-						<li class="border-bottom border-1 mb-4">
-							<p class="preguntas-frecuentes__p">¿Por qué la página no se visualiza bien en mi celular o tablet?</p>
-							<span> Es posible que tu navegador esté desactualizado, intenta actualizarlo y recarga la página. </span>
-							<br />
-							<a href="https://www.google.com/intl/es/chrome/">Descargar última versión de Google Chrome</a>
-							<br /><br />
+					<li>
+						<h3>
+							<i class="fas fa-chevron-right"></i>
+							¿En cuánto tiempo se acredita mi recarga?
+						</h3>
+						<p>El tiempo promedio de acreditación es de 10 minutos. El horario de acreditación es de 08:00 de la mañana a 10:00 de la noche.</p>
+					</li>
 
-							<iframe class="preguntas-frecuentes__iframe" src="https://www.youtube.com/embed/_pDcacxQhhQ" title="Video de como actualizar Google Chrome" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-						</li>
-						<br />
-					</ol>
-				</div>
+					<li>
+						<h3>
+							<i class="fas fa-chevron-right"></i>
+							¿Qué necesito para utilizar este servicio?
+						</h3>
+						<p>
+							Debes tener instalado Whatsapp en tu teléfono celular o computador ya que una vez que solicites tus recargas el proceso continúa por esa vía.
+							<a href="https://www.xataka.com/basics/como-utilizar-whatsapp-web-para-utilizar-whatsapp-desde-tu-navegador">Clic aquí para ver como utilizar Whatsapp en tu computadora.</a>
+						</p>
+
+						<iframe src="https://www.youtube.com/embed/eRqreOyBJfI" title="Video sobre como utilizar Whatsapp Web" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</li>
+
+					<br />
+				</ul>
 			</section>
 		</main>
 
 		<!-- FOOTER -->
-		<footer class="footer">
-			<ul class="footer__ul">
-				<li class="footer__li">Recargas 24/7 - Todos los derechos reservados 2021</li>
-				<li class="footer__li">
-					<a class="footer__a" href="mailto:info@recargas247.net" target="_blank">info@recargas247.net</a>
-					/
-					<a class="footer__a" href="https://wa.me/+584120663036" target="_blank">04120663036</a>
+		<footer id="footer" class="d-flex flex-wrap justify-content-between align-items-center border-top bg-light">
+			<div class="col-md-4 d-flex align-items-center">
+				<span class="text-muted">© 2021 Recargas 24/7</span>
+			</div>
+
+			<ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+				<li class="ms-3 pt-2">
+					<a href="https://www.instagram.com/recargas247" target="_blank">
+						<i class="fab fa-instagram"></i>
+					</a>
+				</li>
+				<li class="ms-3 pt-2">
+					<a href="https://www.twitter.com/recargas247" target="_blank">
+						<i class="fab fa-twitter"></i>
+					</a>
+				</li>
+				<li class="ms-3 pt-2">
+					<a href="https://wa.me/584120663036?text=¡Hola! Estoy viendo su página web y me gustaría obtener más información sobre su servicio." target="_blank">
+						<i class="fab fa-whatsapp"></i>
+					</a>
 				</li>
 			</ul>
 		</footer>

@@ -1,131 +1,238 @@
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,700&display=swap");
-/* VARIABLES  -------------------------------------------- */
 /* ESTILOS DE ETIQUETAS -------------------------------- */
 body {
   font-family: Titillium Web, Helvetica !important;
-  font-size: 100%; }
-
-/* titulos */
-h2 {
-  background-color: #6c757d;
-  padding: 10px 25px;
-  color: white;
-  text-transform: uppercase;
-  font-size: 1.3rem;
-  font-weight: 700; }
-
-h3 {
-  font-size: 1.2rem; }
+  font-size: 120%; }
 
 /* main */
 main {
-  margin-top: 15px !important;
-  animation: fade-in 2s; }
+  margin-top: 20px !important;
+  animation: fade-in 2s;
+  padding: 0% 5%; }
+
+/* titulos */
+h2 {
+  color: #212529;
+  font-size: 2rem;
+  font-weight: 300;
+  border-bottom: 1px dotted #4899d2;
+  line-height: 1.5;
+  font-weight: 600;
+  margin: 40px 0px;
+  text-transform: uppercase; }
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #293c7d;
+  padding: 5px;
+  border-bottom: 3px dotted #293c7d; }
+
+a {
+  color: #4899d2;
+  text-decoration: none;
+  text-shadow: none; }
 
 /* menu */
-.menu {
-  background-color: #f1f1f1ed !important;
-  min-height: 90px; }
-  .menu__logo {
-    height: 25px;
-    padding-left: 15px; }
-  .menu__img {
-    height: 20px; }
+#navbar {
+  background-color: white !important;
+  padding: 25px 3%;
+  border-bottom: 4px solid #4899d2; }
+  #navbar li {
+    text-align: right; }
+  #navbar .navbar-brand img {
+    height: 30px; }
+  #navbar .fab {
+    color: #293c7d;
+    padding-top: 3px;
+    font-size: 1.5rem; }
+  #navbar .nav-link {
+    color: #293c7d !important;
+    font-weight: 600;
+    font-size: 1.2rem; }
+  #navbar .operadoras img {
+    height: 25px; }
+  #navbar .active {
+    border-bottom: 2px solid #4899d2; }
 
-.nav-link {
-  color: #293c7d !important;
-  font-weight: 600; }
+/* header */
+.header .header__banner {
+  display: flex;
+  height: calc(100vh - 92px);
+  width: 100%;
+  background-image: url("../assets/img/header-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0% 10%;
+  text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.56); }
+
+.header .header__tittle {
+  color: white;
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 1.2; }
+
+.header .header__p {
+  padding: 0;
+  font-weight: 300;
+  font-size: 1.5;
+  color: white;
+  margin-bottom: 0; }
+
+.header-operadoras .header__banner {
+  display: flex;
+  height: 35vh;
+  width: 100%;
+  background-image: url("../assets/img/operadoras-bg.jpg");
+  background-position: bottom center;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0% 10%;
+  text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.56); }
+
+.header-nuestros-numeros .header__banner {
+  display: flex;
+  height: 35vh;
+  width: 100%;
+  background-image: url("../assets/img/nuestros-numeros-bg.jpg");
+  background-position: top right;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0% 10%;
+  text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.56); }
+
+.header-galeria .header__banner {
+  display: flex;
+  height: 35vh;
+  width: 100%;
+  background-image: url("../assets/img/galeria-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0% 10%;
+  text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.56); }
+
+.header-preguntas-frecuentes .header__banner {
+  display: flex;
+  height: 35vh;
+  width: 100%;
+  background-image: url("../assets/img/preguntas-frecuentes-bg.jpg");
+  background-position: center right;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0% 10%;
+  text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.56); }
+
+.header-contacto .header__banner {
+  display: flex;
+  height: 35vh;
+  width: 100%;
+  background-image: url("../assets/img/contacto-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0% 10%;
+  text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.56); }
 
 /* footer */
-.footer {
-  padding: 5px;
-  margin-top: 30px;
-  background-color: #212529; }
-  .footer__ul {
-    padding: 0px; }
-  .footer__li {
-    text-align: center;
-    color: white !important;
-    font-size: 0.8rem;
-    margin-top: 5px;
-    list-style-type: none; }
-  .footer__a {
-    color: white; }
+footer {
+  margin-top: 50px;
+  padding: 25px;
+  font-size: 1.3rem; }
+  footer .fab {
+    color: #293c7d;
+    font-size: 1.5rem; }
 
 /* recargar */
-.recargar {
+#recargar {
   background-color: #293c7d;
-  padding: 15px 0px;
-  margin-top: 15px;
+  margin-top: 8px;
+  padding: 20px;
   text-align: center;
-  color: white; }
-  .recargar__p {
-    margin: 0px; }
-  .recargar__select, .recargar__input {
-    margin: 5px; }
+  scroll-margin-top: 100px; }
+  #recargar p {
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 1; }
+  #recargar select,
+  #recargar input {
+    margin: 5px;
+    border: none; }
 
 /* como funciona */
-.como-funciona__img {
-  width: 100%; }
-
-.como-funciona__p {
-  min-height: 100px; }
+#como-funciona {
+  scroll-margin-top: 100px; }
+  #como-funciona p {
+    padding: 15px !important;
+    text-align: justify; }
 
 /* operadoras */
-.operadoras__div {
-  flex-basis: 150px;
-  margin: 20px 10px;
+#operadoras .card-img-top {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center; }
 
-.operadoras__img {
-  height: 30px; }
+#operadoras .card-body p {
+  margin-bottom: 0px; }
 
 /* galeria */
-.galeria__img:hover {
-  border: 10px solid white;
+#galeria img {
+  width: 100%; }
+
+#galeria img:hover {
+  border: 5px solid white;
   transition: transform 0.5s;
-  transform: scale(1.1) skew(0deg, 2deg);
+  transform: scale(1.01);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
-.galeria__img {
-  width: 100%;
-  border-radius: 15px; }
-
-/* preguntas frecuentes */
-.preguntas-frecuentes__ol {
-  padding-right: 20px; }
-
-.preguntas-frecuentes__p {
-  font-weight: bold; }
-
-.preguntas-frecuentes__iframe {
-  width: 100%;
-  height: 300px; }
-
-/* contacto */
-.contacto__label {
-  margin-top: 10px; }
-
-/* FLEX ------------------------------------ */
-.custom-flex {
-  display: flex; }
-
-.custom-row {
-  flex-direction: row; }
-
-.custom-wrap {
-  flex-wrap: wrap; }
-
-.space-evenly {
-  justify-content: space-evenly; }
-
-/* GRIDS ------------------------------------------------ */
 .grid-galeria {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   grid-column-gap: 20px;
   grid-row-gap: 20px; }
+
+/* preguntas frecuentes */
+.preguntas-frecuentes ul {
+  padding: 0;
+  list-style: none; }
+
+.preguntas-frecuentes li {
+  margin-bottom: 30px; }
+
+.preguntas-frecuentes i {
+  font-size: 1.2rem; }
+
+.preguntas-frecuentes iframe {
+  width: 100%;
+  height: 70vw;
+  max-width: 900px;
+  max-height: 500px; }
+
+#contacto label {
+  margin-top: 8px; }
+
+#contacto iframe {
+  padding-top: 30px;
+  min-height: 500px; }
 
 /* TRANSICIONES ----------------------------------------- */
 @keyframes fade-in {
@@ -134,20 +241,6 @@ main {
   to {
     opacity: 1; } }
 
-/* MEDIA QUERIES ---------------------------------------- */
-@media (max-width: 768px) {
-  body {
-    font-size: 0.8rem; }
-  /* menu */
-  .menu__li {
-    text-align: right;
-    padding: 8px 0px;
-    font-size: 1.2rem; }
-  .menu .dropdown-menu li {
-    text-align: right; }
-  /* como funciona */
-  .como-funciona__p {
-    min-height: 0px !important; }
-  /* galeria */
+@media (min-width: 768px) {
   .grid-galeria {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: repeat(2, 1fr); } }

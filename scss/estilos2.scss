@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,700&display=swap");
+
+/* VARIABLES  -------------------------------------------- */
+
+$color-principal: #293c7d;
+$color-secundario: #6c757d;
+$tercer-color: #212529;
+$cuarto-color: #d9d9d9;
+
+/* ESTILOS DE ETIQUETAS -------------------------------- */
+body {
+	font-family: Titillium Web, Helvetica !important;
+	font-size: 100%;
+}
+
+/* titulos */
+h2 {
+	color: $tercer-color;
+	font-size: 2rem;
+	font-weight: 300;
+	border-bottom: 1px dotted $color-secundario;
+	line-height: 4rem;
+	font-weight: 600;
+	margin: 40px 0px;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-size: 1.2rem;
+}
+
+p {
+	padding: 0px 20px;
+	font-size: 1.2rem;
+	color: $color-secundario;
+}
+
+/* main */
+main {
+	margin-top: 20px !important;
+	animation: fade-in 2s;
+	padding: 0% 5%;
+}
+
+// ###########################################################
+// INICIO BLOQUES BEM ########################################
+// ###########################################################
+
+/* menu */
+// .menu {
+// 	background-color: white !important;
+// 	// min-height: 110px;
+// 	padding: 25px 3%;
+// 	border-bottom: 1px solid $color-secundario;
+
+// 	&__logo {
+// 		height: 30px;
+// 	}
+
+// 	&__img {
+// 		height: 20px;
+// 	}
+
+// 	&__li {
+// 		text-align: right;
+// 	}
+
+// 	.nav-link {
+// 		color: $color-principal !important;
+// 		font-weight: 600;
+// 		font-size: 1.2rem;
+// 	}
+// }
+
+.fab {
+	color: $color-principal;
+}
+
+/* footer */
+.footer {
+	padding: 20px;
+	font-size: 1.3rem;
+
+	// .fab {
+	// 	color: $color-secundario;
+	// }
+}
+
+/* header */
+// .header {
+// 	height: calc(100vh - 110px);
+// 	width: 100%;
+// 	background-image: url("../assets/img/bg-sm-1.jpg");
+// 	background-position: center;
+// 	background-size: cover;
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: center;
+// 	text-align: center;
+// 	padding: 0% 10%;
+// 	text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.56);
+
+// 	p {
+// 		padding: 0;
+// 		font-weight: 300;
+// 		font-size: 1.5rem;
+// 		color: white;
+// 		margin-bottom: 0;
+// 	}
+
+// 	.header__tittle {
+// 		color: white;
+// 		padding: 0;
+// 		margin: 0;
+// 		font-weight: bold;
+// 		font-size: 3rem;
+// 		line-height: 1.2;
+// 	}
+// }
+
+/* recargar */
+.recargar {
+	background-color: $color-principal;
+	padding: 20px;
+	text-align: center;
+	// color: $color-secundario;
+
+	&__p {
+		color: white;
+		font-weight: bold;
+	}
+
+	&__select,
+	&__input {
+		margin: 5px;
+		border: none;
+	}
+}
+
+/* como funciona */
+.como-funciona {
+	&__img {
+		width: 100%;
+	}
+
+	&__p {
+		// min-height: 100px;
+		padding: 15px !important;
+		text-align: justify;
+	}
+
+	&__h3 {
+		font-size: 1.5rem;
+		font-weight: bold;
+		color: $color-principal;
+	}
+}
+
+/* operadoras */
+.operadoras {
+	&__div {
+		flex-basis: 150px;
+		margin: 20px 10px;
+		text-align: center;
+	}
+
+	&__img {
+		height: 30px;
+	}
+}
+
+/* galeria */
+.galeria {
+	&__img:hover {
+		border: 10px solid white;
+		transition: transform 0.5s;
+		transform: scale(1.1) skew(0deg, 2deg);
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+
+	&__img {
+		width: 100%;
+		border-radius: 15px;
+	}
+}
+
+/* preguntas frecuentes */
+.preguntas-frecuentes {
+	&__ol {
+		padding-right: 20px;
+	}
+
+	&__p {
+		font-weight: bold;
+	}
+
+	&__iframe {
+		width: 100%;
+		height: 300px;
+	}
+}
+
+/* contacto */
+.contacto {
+	&__label {
+		margin-top: 10px;
+	}
+}
+
+// ###########################################################
+// FIN DE BLOQUES BEM ########################################
+// ###########################################################
+
+/* FLEX ------------------------------------ */
+
+.custom-flex {
+	display: flex;
+}
+
+.custom-row {
+	flex-direction: row;
+}
+
+.custom-wrap {
+	flex-wrap: wrap;
+}
+
+.space-evenly {
+	justify-content: space-evenly;
+}
+
+/* GRIDS ------------------------------------------------ */
+
+.grid-galeria {
+	display: grid;
+	grid-template-columns: 1fr;
+	// grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 1fr;
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+}
+
+/* TRANSICIONES ----------------------------------------- */
+
+@keyframes fade-in {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+/* MEDIA QUERIES ---------------------------------------- */
+@media (max-width: 768px) {
+}
+
+@media (min-width: 768px) {
+	.header {
+		height: calc(70vh - 110px);
+		//<a href="https://www.freepik.com/photos/computer">Computer photo created by lookstudio - www.freepik.com</a>
+		background-image: url("../assets/img/bg-md-2.jpg");
+		background-position: left;
+		justify-content: right;
+		text-align: right;
+	}
+
+	body {
+		// font-size: 0.8rem;
+	}
+
+	/* menu */
+	.menu {
+		&__li {
+			// text-align: right;
+			// padding: 8px 0px;
+			// font-size: 1.2rem;
+		}
+
+		& .dropdown-menu li {
+			// text-align: right;
+		}
+	}
+
+	/* como funciona */
+	.como-funciona__p {
+		// min-height: 0px !important;
+	}
+
+	/* galeria */
+	.grid-galeria {
+		// grid-template-columns: 1fr;
+	}
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
+}
+
+@media (min-width: 1600px) {
+}

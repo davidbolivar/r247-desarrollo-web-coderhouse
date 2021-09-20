@@ -52,6 +52,7 @@ $movilnet: #f78f1e !default;
 $digitel: #552b6d !default;
 $simpletv: #071630 !default;
 $inter: #006fb9 !default;
+$principal: #293c7d !default;
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
@@ -75,6 +76,7 @@ $colors: (
 	"digitel": $digitel,
 	"simpletv": $simpletv,
 	"inter": $inter,
+	"principal": $principal,
 ) !default;
 // scss-docs-end colors-map
 
@@ -93,6 +95,7 @@ $movilnet: $movilnet !default;
 $digitel: $digitel !default;
 $simpletv: $simpletv !default;
 $inter: $inter !default;
+$principal: $principal !default;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -111,6 +114,7 @@ $theme-colors: (
 	"digitel": $digitel,
 	"simpletv": $simpletv,
 	"inter": $inter,
+	"principal": $principal,
 ) !default;
 // scss-docs-end theme-colors-map
 

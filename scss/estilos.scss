@@ -1,195 +1,261 @@
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,700&display=swap");
 
-/* VARIABLES  -------------------------------------------- */
+//  VARIABLES  --------------------------------------------
 
-$primer-color: #293c7d;
-$segundo-color: #6c757d;
+$color-principal: #293c7d;
+$color-secundario: #4899d2;
 $tercer-color: #212529;
-$cuarto-color: #f1f1f1ed;
+$cuarto-color: #212529;
+
+$header-height-lg: calc(100vh - 92px);
+$header-img: url("../assets/img/header-bg.jpg");
+$header-height-md: 35vh;
+
+$scroll-top-margin: 100px;
 
 /* ESTILOS DE ETIQUETAS -------------------------------- */
 body {
 	font-family: Titillium Web, Helvetica !important;
-	font-size: 100%;
-}
-
-/* titulos */
-h2 {
-	background-color: $segundo-color;
-	padding: 10px 25px;
-	color: white;
-	text-transform: uppercase;
-	font-size: 1.3rem;
-	font-weight: 700;
-}
-
-h3 {
-	font-size: 1.2rem;
+	font-size: 120%;
 }
 
 /* main */
 main {
-	margin-top: 15px !important;
+	margin-top: 20px !important;
 	animation: fade-in 2s;
+	padding: 0% 5%;
 }
 
-// ###########################################################
-// INICIO BLOQUES BEM ########################################
-// ###########################################################
+/* titulos */
+h2 {
+	color: $tercer-color;
+	font-size: 2rem;
+	font-weight: 300;
+	border-bottom: 1px dotted $color-secundario;
+	line-height: 1.5;
+	font-weight: 600;
+	margin: 40px 0px;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: $color-principal;
+	padding: 5px;
+	border-bottom: 3px dotted $color-principal;
+}
+
+a {
+	color: $color-secundario;
+	text-decoration: none;
+	text-shadow: none;
+}
 
 /* menu */
-.menu {
-	background-color: $cuarto-color !important;
-	min-height: 90px;
+#navbar {
+	background-color: white !important;
+	padding: 25px 3%;
+	border-bottom: 4px solid $color-secundario;
 
-	&__logo {
-		height: 25px;
-		padding-left: 15px;
+	li {
+		text-align: right;
 	}
 
-	&__img {
-		height: 20px;
+	.navbar-brand img {
+		height: 30px;
+	}
+
+	.fab {
+		color: $color-principal;
+		padding-top: 3px;
+		font-size: 1.5rem;
+	}
+
+	.nav-link {
+		color: $color-principal !important;
+		font-weight: 600;
+		font-size: 1.2rem;
+	}
+
+	.operadoras img {
+		height: 25px;
+	}
+
+	.active {
+		border-bottom: 2px solid $color-secundario;
 	}
 }
 
-.nav-link {
-	color: $primer-color !important;
-	font-weight: 600;
+/* header */
+@mixin header($height, $img, $align) {
+	.header__banner {
+		display: flex;
+		height: $height;
+		width: 100%;
+		background-image: $img;
+		background-position: $align;
+		background-size: cover;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		padding: 0% 10%;
+		text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.56);
+	}
+}
+
+@mixin header__tittle {
+	.header__tittle {
+		color: white;
+		padding: 0;
+		margin: 0;
+		font-weight: bold;
+		font-size: 3rem;
+		line-height: 1.2;
+	}
+}
+
+@mixin header__p {
+	.header__p {
+		padding: 0;
+		font-weight: 300;
+		font-size: 1.5;
+		color: white;
+		margin-bottom: 0;
+	}
+}
+
+.header {
+	@include header($header-height-lg, $header-img, center);
+	@include header__tittle;
+	@include header__p;
+}
+
+$headers-array: (
+	operadoras: bottom center,
+	nuestros-numeros: top right,
+	galeria: center,
+	preguntas-frecuentes: center right,
+	contacto: center,
+);
+
+// $headers-array: operadoras nuestros-numeros galeria preguntas-frecuentes contacto;
+@each $header, $align in $headers-array {
+	.header-#{$header} {
+		@include header($header-height-md, url("../assets/img/#{$header}-bg.jpg"), $align);
+	}
 }
 
 /* footer */
-.footer {
-	padding: 5px;
-	margin-top: 30px;
-	background-color: $tercer-color;
-
-	&__ul {
-		padding: 0px;
-	}
-
-	&__li {
-		text-align: center;
-		color: white !important;
-		font-size: 0.8rem;
-		margin-top: 5px;
-		list-style-type: none;
-	}
-
-	&__a {
-		color: white;
+footer {
+	margin-top: 50px;
+	padding: 25px;
+	font-size: 1.3rem;
+	.fab {
+		color: $color-principal;
+		font-size: 1.5rem;
 	}
 }
 
 /* recargar */
-.recargar {
-	background-color: $primer-color;
-	padding: 15px 0px;
-	margin-top: 15px;
+#recargar {
+	background-color: $color-principal;
+	margin-top: 8px;
+	padding: 20px;
 	text-align: center;
-	color: white;
+	scroll-margin-top: $scroll-top-margin;
 
-	&__p {
-		margin: 0px;
+	p {
+		color: white;
+		font-weight: bold;
+		font-size: 2rem;
+		line-height: 1;
 	}
 
-	&__select,
-	&__input {
+	select,
+	input {
 		margin: 5px;
+		border: none;
 	}
 }
 
 /* como funciona */
-.como-funciona {
-	&__img {
-		width: 100%;
-	}
-
-	&__p {
-		min-height: 100px;
+#como-funciona {
+	scroll-margin-top: $scroll-top-margin;
+	p {
+		// min-height: 100px;
+		padding: 15px !important;
+		text-align: justify;
 	}
 }
 
 /* operadoras */
-.operadoras {
-	&__div {
-		flex-basis: 150px;
-		margin: 20px 10px;
+#operadoras {
+	.card-img-top {
+		height: 120px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		text-align: center;
 	}
 
-	&__img {
-		height: 30px;
+	.card-body p {
+		margin-bottom: 0px;
 	}
 }
 
 /* galeria */
-.galeria {
-	&__img:hover {
-		border: 10px solid white;
-		transition: transform 0.5s;
-		transform: scale(1.1) skew(0deg, 2deg);
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+#galeria {
+	img {
+		width: 100%;
 	}
 
-	&__img {
-		width: 100%;
-		border-radius: 15px;
+	img:hover {
+		border: 5px solid white;
+		transition: transform 0.5s;
+		transform: scale(1.01);
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	}
+}
+
+.grid-galeria {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
 }
 
 /* preguntas frecuentes */
 .preguntas-frecuentes {
-	&__ol {
-		padding-right: 20px;
+	ul {
+		padding: 0;
+		list-style: none;
+	}
+	li {
+		margin-bottom: 30px;
 	}
 
-	&__p {
-		font-weight: bold;
+	i {
+		font-size: 1.2rem;
 	}
 
-	&__iframe {
+	iframe {
 		width: 100%;
-		height: 300px;
+		height: 70vw;
+		max-width: 900px;
+		max-height: 500px;
 	}
 }
 
-/* contacto */
-.contacto {
-	&__label {
-		margin-top: 10px;
+#contacto {
+	label {
+		margin-top: 8px;
 	}
-}
-
-// ###########################################################
-// FIN DE BLOQUES BEM ########################################
-// ###########################################################
-
-/* FLEX ------------------------------------ */
-
-.custom-flex {
-	display: flex;
-}
-
-.custom-row {
-	flex-direction: row;
-}
-
-.custom-wrap {
-	flex-wrap: wrap;
-}
-
-.space-evenly {
-	justify-content: space-evenly;
-}
-
-/* GRIDS ------------------------------------------------ */
-
-.grid-galeria {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: 1fr;
-	grid-column-gap: 20px;
-	grid-row-gap: 20px;
+	iframe {
+		padding-top: 30px;
+		min-height: 500px;
+	}
 }
 
 /* TRANSICIONES ----------------------------------------- */
@@ -203,32 +269,8 @@ main {
 	}
 }
 
-/* MEDIA QUERIES ---------------------------------------- */
-@media (max-width: 768px) {
-	body {
-		font-size: 0.8rem;
-	}
-
-	/* menu */
-	.menu {
-		&__li {
-			text-align: right;
-			padding: 8px 0px;
-			font-size: 1.2rem;
-		}
-
-		& .dropdown-menu li {
-			text-align: right;
-		}
-	}
-
-	/* como funciona */
-	.como-funciona__p {
-		min-height: 0px !important;
-	}
-
-	/* galeria */
+@media (min-width: 768px) {
 	.grid-galeria {
-		grid-template-columns: 1fr;
+		grid-template-columns: repeat(2, 1fr);
 	}
 }
