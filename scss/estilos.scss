@@ -220,7 +220,7 @@ footer {
 
 .grid-galeria {
 	display: grid;
-	grid-template-columns: 1fr;
+	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: 1fr;
 	grid-column-gap: 20px;
 	grid-row-gap: 20px;
@@ -232,6 +232,7 @@ footer {
 		padding: 0;
 		list-style: none;
 	}
+
 	li {
 		margin-bottom: 30px;
 	}
@@ -269,8 +270,14 @@ footer {
 	}
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
 	.grid-galeria {
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: 4fr;
+	}
+
+	@each $header, $align in $headers-array {
+		.header-#{$header} .header__banner {
+			background-image: url("../assets/img/#{$header}-bg-sm.jpg") !important;
+		}
 	}
 }

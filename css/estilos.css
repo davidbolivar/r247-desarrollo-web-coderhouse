@@ -205,7 +205,7 @@ footer {
 
 .grid-galeria {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 20px;
   grid-row-gap: 20px; }
@@ -241,6 +241,16 @@ footer {
   to {
     opacity: 1; } }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .grid-galeria {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: 4fr; }
+  .header-operadoras .header__banner {
+    background-image: url("../assets/img/operadoras-bg-sm.jpg") !important; }
+  .header-nuestros-numeros .header__banner {
+    background-image: url("../assets/img/nuestros-numeros-bg-sm.jpg") !important; }
+  .header-galeria .header__banner {
+    background-image: url("../assets/img/galeria-bg-sm.jpg") !important; }
+  .header-preguntas-frecuentes .header__banner {
+    background-image: url("../assets/img/preguntas-frecuentes-bg-sm.jpg") !important; }
+  .header-contacto .header__banner {
+    background-image: url("../assets/img/contacto-bg-sm.jpg") !important; } }
