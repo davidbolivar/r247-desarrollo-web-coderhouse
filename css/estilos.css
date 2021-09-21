@@ -244,13 +244,15 @@ footer {
 @media (max-width: 768px) {
   .grid-galeria {
     grid-template-columns: 4fr; }
+  .header .header__banner {
+    background-image: url("../assets/img/header-bg-sm.jpg"); }
   .header-operadoras .header__banner {
-    background-image: url("../assets/img/operadoras-bg-sm.jpg") !important; }
+    background-image: url("../assets/img/operadoras-bg-sm.jpg"); }
   .header-nuestros-numeros .header__banner {
-    background-image: url("../assets/img/nuestros-numeros-bg-sm.jpg") !important; }
+    background-image: url("../assets/img/nuestros-numeros-bg-sm.jpg"); }
   .header-galeria .header__banner {
-    background-image: url("../assets/img/galeria-bg-sm.jpg") !important; }
+    background-image: url("../assets/img/galeria-bg-sm.jpg"); }
   .header-preguntas-frecuentes .header__banner {
-    background-image: url("../assets/img/preguntas-frecuentes-bg-sm.jpg") !important; }
+    background-image: url("../assets/img/preguntas-frecuentes-bg-sm.jpg"); }
   .header-contacto .header__banner {
-    background-image: url("../assets/img/contacto-bg-sm.jpg") !important; } }
+    background-image: url("../assets/img/contacto-bg-sm.jpg"); } }

@@ -275,9 +275,13 @@ footer {
 		grid-template-columns: 4fr;
 	}
 
+	.header .header__banner {
+		background-image: url("../assets/img/header-bg-sm.jpg");
+	}
+
 	@each $header, $align in $headers-array {
 		.header-#{$header} .header__banner {
-			background-image: url("../assets/img/#{$header}-bg-sm.jpg") !important;
+			background-image: url("../assets/img/#{$header}-bg-sm.jpg");
 		}
 	}
 }
