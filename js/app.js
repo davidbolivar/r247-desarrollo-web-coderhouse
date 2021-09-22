@@ -10,9 +10,9 @@ formRecargar.addEventListener("submit", function (event) {
 	let name = prompt("¡Hola! ¿Cuál es tu nombre?");
 
 	if (name && name != "") {
-		window.open(`https://wa.me/584120663036?text=¡Hola! Mi nombre es ${name.toUpperCase()}. Me interesa realizar una recarga *${operator.value.toUpperCase()}* por *${amount.value} Bs* al número *${serviceNumber.value}*`);
+		window.open(`https://wa.me/584120663036?text=¡Hola! Mi nombre es ${name.toUpperCase()}. Me interesa realizar una recarga *${operator.value.toUpperCase()}* por *${amount.value} Bs* al número *${serviceNumber.value}*.`, "_blank");
 	} else if (name == "") {
-		window.open(`https://wa.me/584120663036?text=¡Hola! Me interesa realizar una recarga *${operator.value.toUpperCase()}* por *${amount.value} Bs* al número *${serviceNumber.value}*`);
+		window.open(`https://wa.me/584120663036?text=¡Hola! Me interesa realizar una recarga *${operator.value.toUpperCase()}* por *${amount.value} Bs* al número *${serviceNumber.value}*.`, "_blank");
 	} else {
 		alert("Intenta enviar tu solicitud nuevamente.");
 	}
