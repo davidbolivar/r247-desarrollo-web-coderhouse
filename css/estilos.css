@@ -158,19 +158,19 @@ footer {
     font-size: 1.5rem; }
 
 /* recargar */
-#recargar {
+#form-recargar {
   background-color: #293c7d;
   margin-top: 8px;
   padding: 20px;
   text-align: center;
   scroll-margin-top: 100px; }
-  #recargar p {
+  #form-recargar p {
     color: white;
     font-weight: bold;
     font-size: 2rem;
     line-height: 1; }
-  #recargar select,
-  #recargar input {
+  #form-recargar select,
+  #form-recargar input {
     margin: 5px;
     border: none; }
 
