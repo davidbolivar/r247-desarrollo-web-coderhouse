@@ -221,11 +221,9 @@ footer {
 .preguntas-frecuentes i {
   font-size: 1.2rem; }
 
-.preguntas-frecuentes iframe {
+.preguntas-frecuentes img {
   width: 100%;
-  height: 70vw;
-  max-width: 900px;
-  max-height: 500px; }
+  max-width: 800px; }
 
 #contacto label {
   margin-top: 8px; }
