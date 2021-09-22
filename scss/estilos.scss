@@ -243,11 +243,11 @@ footer {
 				font-size: 1.2rem;
 			}
 		}
-	}
 
-	img {
-		width: 100%;
-		max-width: 800px;
+		a img {
+			width: 100%;
+			max-width: 800px;
+		}
 	}
 }
 
@@ -263,12 +263,10 @@ footer {
 
 /* CLASES PERSONALIZADSA-------------------------------------------*/
 
-.contact-icons {
-	width: 28px;
+.icons {
 	height: 28px;
-	fill: rgb(153, 58, 58);
 }
-.contact-icons:hover {
+.icons:hover {
 	transform: scale(1.2);
 }
 

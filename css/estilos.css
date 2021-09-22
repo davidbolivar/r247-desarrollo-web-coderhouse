@@ -221,10 +221,9 @@ footer {
     margin-bottom: 30px; }
     .preguntas-frecuentes ul li i {
       font-size: 1.2rem; }
-
-.preguntas-frecuentes img {
-  width: 100%;
-  max-width: 800px; }
+  .preguntas-frecuentes ul a img {
+    width: 100%;
+    max-width: 800px; }
 
 #contacto label {
   margin-top: 8px; }
@@ -234,12 +233,10 @@ footer {
   min-height: 500px; }
 
 /* CLASES PERSONALIZADSA-------------------------------------------*/
-.contact-icons {
-  width: 28px;
-  height: 28px;
-  fill: #993a3a; }
+.icons {
+  height: 28px; }
 
-.contact-icons:hover {
+.icons:hover {
   transform: scale(1.2); }
 
 /* TRANSICIONES ----------------------------------------- */
