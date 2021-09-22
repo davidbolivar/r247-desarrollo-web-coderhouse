@@ -197,8 +197,13 @@ footer {
 		text-align: center;
 	}
 
-	.card-body p {
-		margin-bottom: 0px;
+	.card-body {
+		p {
+			margin-bottom: 0px;
+		}
+		button {
+			font-weight: bold;
+		}
 	}
 }
 

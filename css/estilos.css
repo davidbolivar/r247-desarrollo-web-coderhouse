@@ -192,6 +192,9 @@ footer {
 #operadoras .card-body p {
   margin-bottom: 0px; }
 
+#operadoras .card-body button {
+  font-weight: bold; }
+
 /* galeria */
 #galeria img {
   width: 100%; }
