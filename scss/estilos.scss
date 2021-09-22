@@ -47,9 +47,15 @@ h3 {
 }
 
 a {
-	color: $color-secundario;
+	color: $color-principal;
 	text-decoration: none;
 	text-shadow: none;
+}
+
+p {
+	a {
+		font-weight: bold;
+	}
 }
 
 /* menu */
@@ -60,6 +66,12 @@ a {
 
 	li {
 		text-align: right;
+
+		.nav-link {
+			color: $color-principal !important;
+			font-weight: 600;
+			font-size: 1.2rem;
+		}
 	}
 
 	.navbar-brand img {
@@ -70,16 +82,6 @@ a {
 		color: $color-principal;
 		padding-top: 3px;
 		font-size: 1.5rem;
-	}
-
-	.nav-link {
-		color: $color-principal !important;
-		font-weight: 600;
-		font-size: 1.2rem;
-	}
-
-	.operadoras img {
-		height: 25px;
 	}
 
 	.active {
@@ -231,14 +233,14 @@ footer {
 	ul {
 		padding: 0;
 		list-style: none;
-	}
 
-	li {
-		margin-bottom: 30px;
-	}
+		li {
+			margin-bottom: 30px;
 
-	i {
-		font-size: 1.2rem;
+			i {
+				font-size: 1.2rem;
+			}
+		}
 	}
 
 	img {

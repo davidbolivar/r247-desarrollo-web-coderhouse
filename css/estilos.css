@@ -29,9 +29,12 @@ h3 {
   border-bottom: 3px dotted #293c7d; }
 
 a {
-  color: #4899d2;
+  color: #293c7d;
   text-decoration: none;
   text-shadow: none; }
+
+p a {
+  font-weight: bold; }
 
 /* menu */
 #navbar {
@@ -40,18 +43,16 @@ a {
   border-bottom: 4px solid #4899d2; }
   #navbar li {
     text-align: right; }
+    #navbar li .nav-link {
+      color: #293c7d !important;
+      font-weight: 600;
+      font-size: 1.2rem; }
   #navbar .navbar-brand img {
     height: 30px; }
   #navbar .fab {
     color: #293c7d;
     padding-top: 3px;
     font-size: 1.5rem; }
-  #navbar .nav-link {
-    color: #293c7d !important;
-    font-weight: 600;
-    font-size: 1.2rem; }
-  #navbar .operadoras img {
-    height: 25px; }
   #navbar .active {
     border-bottom: 2px solid #4899d2; }
 
@@ -214,12 +215,10 @@ footer {
 .preguntas-frecuentes ul {
   padding: 0;
   list-style: none; }
-
-.preguntas-frecuentes li {
-  margin-bottom: 30px; }
-
-.preguntas-frecuentes i {
-  font-size: 1.2rem; }
+  .preguntas-frecuentes ul li {
+    margin-bottom: 30px; }
+    .preguntas-frecuentes ul li i {
+      font-size: 1.2rem; }
 
 .preguntas-frecuentes img {
   width: 100%;
