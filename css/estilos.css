@@ -47,12 +47,10 @@ p a {
       color: #293c7d !important;
       font-weight: 600;
       font-size: 1.2rem; }
+    #navbar li .nav-link:hover {
+      color: #4899d2 !important; }
   #navbar .navbar-brand img {
     height: 30px; }
-  #navbar .fab {
-    color: #293c7d;
-    padding-top: 3px;
-    font-size: 1.5rem; }
   #navbar .active {
     border-bottom: 2px solid #4899d2; }
 
@@ -230,6 +228,15 @@ footer {
 #contacto iframe {
   padding-top: 30px;
   min-height: 500px; }
+
+/* CLASES PERSONALIZADSA-------------------------------------------*/
+.contact-icons {
+  width: 28px;
+  height: 28px;
+  fill: #993a3a; }
+
+.contact-icons:hover {
+  transform: scale(1.2); }
 
 /* TRANSICIONES ----------------------------------------- */
 @keyframes fade-in {

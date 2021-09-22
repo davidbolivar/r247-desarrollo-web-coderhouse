@@ -5,7 +5,6 @@
 $color-principal: #293c7d;
 $color-secundario: #4899d2;
 $tercer-color: #212529;
-$cuarto-color: #212529;
 
 $header-height-lg: calc(100vh - 92px);
 $header-img: url("../assets/img/header-bg.jpg");
@@ -72,16 +71,13 @@ p {
 			font-weight: 600;
 			font-size: 1.2rem;
 		}
+		.nav-link:hover {
+			color: $color-secundario !important;
+		}
 	}
 
 	.navbar-brand img {
 		height: 30px;
-	}
-
-	.fab {
-		color: $color-principal;
-		padding-top: 3px;
-		font-size: 1.5rem;
 	}
 
 	.active {
@@ -257,6 +253,17 @@ footer {
 		padding-top: 30px;
 		min-height: 500px;
 	}
+}
+
+/* CLASES PERSONALIZADSA-------------------------------------------*/
+
+.contact-icons {
+	width: 28px;
+	height: 28px;
+	fill: rgb(153, 58, 58);
+}
+.contact-icons:hover {
+	transform: scale(1.2);
 }
 
 /* TRANSICIONES ----------------------------------------- */
