@@ -146,7 +146,8 @@
 
 					<h3>Formulario de contacto</h3>
 
-					<form action="contacto.php" method="POST">
+					<form action="https://formsubmit.io/send/e344e697-a5c4-46f9-95d3-7c69e6ceb94b" method="POST">
+						<input name="_redirect" type="hidden" id="name" value="https://davidbolivar.github.io/r247-desarrollo-web-coderhouse/gracias-por-contactarnos.html" />
 						<label class="form-label" for="name">Nombre y apellido</label>
 						<input class="form-control" type="text" name="name" id="name" placeholder="Ingresa tu nombre y apellido" required />
 
@@ -164,13 +165,14 @@
 						</select>
 
 						<label class="form-label" for="comments">Preguntas o comentarios</label>
-						<textarea class="form-control" name="comments" id="comments" rows="4" cols="50">Ingrese aquí sus preguntas o comentarios.</textarea>
+						<textarea class="form-control" name="comments" id="comments" rows="4" cols="50"></textarea>
 
-						<div class="form-check form-check-inline">
+						<!-- <div class="form-check form-check-inline">
 							<input class="form-check-input mt-3" type="checkbox" value="1" name="notifications" id="notifications" />
 							<label class="form-check-label" for="notifications">Activa para recibir notificaciones y promociones</label>
-						</div>
+						</div> -->
 						<div class="mt-2">
+							<input name="_formsubmit_id" type="text" style="display: none" />
 							<input class="btn btn-secondary rounded-0 me-2" type="reset" value="Limpiar formulario" />
 							<input class="btn btn-principal rounded-0" type="submit" value="Enviar" />
 						</div>
