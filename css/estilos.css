@@ -216,6 +216,8 @@ footer {
 /* MEDIA QUERIES ----------------------------------------- */
 /* iconos */
 @media (min-width: 768px) {
+  html {
+    scroll-behavior: auto !important; }
   .grid-galeria {
     grid-template-columns: repeat(2, 1fr) !important; }
   .header__banner--index {
