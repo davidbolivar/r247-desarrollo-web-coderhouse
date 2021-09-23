@@ -31,7 +31,7 @@ body {
 main {
 	margin-top: 20px !important;
 	animation: fade-in 2s;
-	padding: 0% 5%;
+	margin: 0% 3%;
 }
 
 /* titulos */
@@ -173,11 +173,10 @@ footer {
 			i {
 				font-size: 1.2rem;
 			}
-		}
-
-		a img {
-			width: 100%;
-			max-width: 800px;
+			a img {
+				width: 100%;
+				max-width: 800px;
+			}
 		}
 	}
 }
@@ -295,6 +294,9 @@ footer {
 @media (min-width: 768px) {
 	html {
 		scroll-behavior: auto !important;
+	}
+	main {
+		margin: 0% 8%;
 	}
 
 	.grid-galeria {
