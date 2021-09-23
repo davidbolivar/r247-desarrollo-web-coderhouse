@@ -7,10 +7,20 @@ $color-secundario: #4899d2;
 $tercer-color: #212529;
 
 $header-height-lg: calc(100vh - 92px);
-$header-img: url("../assets/img/header-bg.jpg");
+$header-img: url("../assets/img/header-bg-sm.jpg");
 $header-height-md: 35vh;
 
 $scroll-top-margin: 100px;
+
+//	MAPAS y LISTAS ----------------------------------------
+
+$headers-array: (
+	operadoras: bottom center,
+	nuestros-numeros: top right,
+	galeria: center,
+	preguntas-frecuentes: center right,
+	contacto: center,
+);
 
 /* ESTILOS DE ETIQUETAS -------------------------------- */
 body {
@@ -18,7 +28,6 @@ body {
 	font-size: 120%;
 }
 
-/* main */
 main {
 	margin-top: 20px !important;
 	animation: fade-in 2s;
@@ -45,17 +54,31 @@ h3 {
 	border-bottom: 3px dotted $color-principal;
 }
 
+/* links */
 a {
 	color: $color-principal;
 	text-decoration: none;
-	text-shadow: none;
 }
 
+/* parrafos */
 p {
 	a {
 		font-weight: 600;
 	}
 }
+
+/* footer */
+footer {
+	margin-top: 50px;
+	padding: 25px;
+	font-size: 1.3rem;
+	.fab {
+		color: $color-principal;
+		font-size: 1.5rem;
+	}
+}
+
+/* ESTILOS DE IDS -------------------------------- */
 
 /* menu */
 #navbar {
@@ -82,76 +105,6 @@ p {
 
 	.active {
 		border-bottom: 2px solid $color-secundario;
-	}
-}
-
-/* header */
-@mixin header($height, $img, $align) {
-	.header__banner {
-		display: flex;
-		height: $height;
-		width: 100%;
-		background-image: $img;
-		background-position: $align;
-		background-size: cover;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-		padding: 0% 10%;
-		text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.56);
-	}
-}
-
-@mixin header__tittle {
-	.header__tittle {
-		color: white;
-		padding: 0;
-		margin: 0;
-		font-weight: bold;
-		font-size: 3rem;
-		line-height: 1.2;
-	}
-}
-
-@mixin header__p {
-	.header__p {
-		padding: 0;
-		font-weight: 300;
-		font-size: 1.5;
-		color: white;
-		margin-bottom: 0;
-	}
-}
-
-.header {
-	@include header($header-height-lg, $header-img, center);
-	@include header__tittle;
-	@include header__p;
-}
-
-$headers-array: (
-	operadoras: bottom center,
-	nuestros-numeros: top right,
-	galeria: center,
-	preguntas-frecuentes: center right,
-	contacto: center,
-);
-
-// $headers-array: operadoras nuestros-numeros galeria preguntas-frecuentes contacto;
-@each $header, $align in $headers-array {
-	.header-#{$header} {
-		@include header($header-height-md, url("../assets/img/#{$header}-bg.jpg"), $align);
-	}
-}
-
-/* footer */
-footer {
-	margin-top: 50px;
-	padding: 25px;
-	font-size: 1.3rem;
-	.fab {
-		color: $color-principal;
-		font-size: 1.5rem;
 	}
 }
 
@@ -208,30 +161,8 @@ footer {
 	}
 }
 
-/* galeria */
-#galeria {
-	img {
-		width: 100%;
-	}
-
-	img:hover {
-		border: 5px solid white;
-		transition: transform 0.5s;
-		transform: scale(1.01);
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	}
-}
-
-.grid-galeria {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: 1fr;
-	grid-column-gap: 20px;
-	grid-row-gap: 20px;
-}
-
 /* preguntas frecuentes */
-.preguntas-frecuentes {
+#preguntas-frecuentes {
 	ul {
 		padding: 0;
 		list-style: none;
@@ -251,6 +182,21 @@ footer {
 	}
 }
 
+/* galeria */
+#galeria {
+	img {
+		width: 100%;
+	}
+
+	img:hover {
+		border: 5px solid white;
+		transition: transform 0.5s;
+		transform: scale(1.01);
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+}
+
+/* contacto */
 #contacto {
 	label {
 		margin-top: 8px;
@@ -261,8 +207,70 @@ footer {
 	}
 }
 
-/* CLASES PERSONALIZADAS-------------------------------------------*/
+/* CLASES -------------------------------------------*/
 
+/* header */
+@mixin modificador-header($height, $img, $align) {
+	height: $height;
+	background-image: $img;
+	background-position: $align;
+}
+
+.header {
+	a {
+		text-shadow: none;
+	}
+
+	&__banner {
+		display: flex;
+		width: 100%;
+		background-size: cover;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		padding: 0% 10%;
+		text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.56);
+	}
+
+	.header__banner--index {
+		@include modificador-header($header-height-lg, $header-img, center);
+
+		.header__tittle {
+			color: white;
+			padding: 0;
+			margin: 0;
+			font-weight: bold;
+			font-size: 3rem;
+			line-height: 1.2;
+		}
+
+		.header__text {
+			padding: 0;
+			font-weight: 300;
+			font-size: 1.5;
+			color: white;
+			margin-bottom: 0;
+		}
+	}
+
+	// $headers-array: operadoras nuestros-numeros galeria preguntas-frecuentes contacto;
+	@each $header, $align in $headers-array {
+		.header__banner--#{$header} {
+			@include modificador-header($header-height-md, url("../assets/img/#{$header}-bg-sm.jpg"), $align);
+		}
+	}
+}
+
+/* galeria */
+.grid-galeria {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+}
+
+/* iconos */
 .icons {
 	height: 28px;
 }
@@ -281,18 +289,21 @@ footer {
 	}
 }
 
-@media (max-width: 768px) {
+/* MEDIA QUERIES ----------------------------------------- */
+
+/* iconos */
+@media (min-width: 768px) {
 	.grid-galeria {
-		grid-template-columns: 4fr;
+		grid-template-columns: repeat(2, 1fr) !important;
 	}
 
-	.header .header__banner {
-		background-image: url("../assets/img/header-bg-sm.jpg");
+	.header__banner--index {
+		background-image: url("../assets/img/header-bg.jpg") !important;
 	}
 
 	@each $header, $align in $headers-array {
-		.header-#{$header} .header__banner {
-			background-image: url("../assets/img/#{$header}-bg-sm.jpg");
+		.header__banner--#{$header} {
+			background-image: url("../assets/img/#{$header}-bg.jpg") !important;
 		}
 	}
 }
